@@ -4,38 +4,92 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-  padding: 0;
+    padding: 0;
 }
-
 header {
-   
     display: flex;
-               background-color: rgb(186, 238, 220);
-        justify-content: space-between;
-       padding: 10px;
+    background-color: rgb(186, 238, 220);
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  .logo img {
+    width: 100px;
+    height: 50px;
   }
 form .input-searh {
     display: flex;
-justify-content: center;
-border-radius: 50px;
-border: 10px;
-color: brown;
+    justify-content: center;
 }
 input {
     border: 1px solid gray;
+    height: 40px;
+    width: 90%;
+    padding: 10 px 30px;
+    vertical-align: bottom;
+    box-sizing: border-box;
 }
-
+button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(140, 224, 214);
+}
 .icons {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     }
 img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    display: block;
 }
 .actual {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: 40px auto 40%;
+    grid-template-columns: repeat(3, 400px);
+    padding-left: 100px;
+    padding-right: 50px;
 }
+.popular-hotel {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.favourites-hotel {
+    display: flex;
+    justify-content: space-around;  
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding-bottom: 1rem;
+    }
+.footer-text-left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    }
+.footer-text-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.footer .footer-text-right li {
+    padding-right: 1rem;
+    }
+.footer .footer-text-right li {
+    padding-left: 1rem;
+    }
+li {
+    list-style-type: none;
+    }
+.footer-text-left img {
+    width: 100px;
+    height: 50px;
+    }
