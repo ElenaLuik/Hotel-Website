@@ -18,6 +18,11 @@ header {
     width: 100px;
     height: 50px;
   }
+  .hotel-menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #ffd540;
+  }
   .search {
     width: 100%;
   }
@@ -26,6 +31,7 @@ form .input-searh {
     justify-content: center;
     padding: 20px;
 }
+
 input {
     border: 1px solid gray;
     height: 40px;
@@ -33,7 +39,10 @@ input {
     padding: 10 px 30px;
     vertical-align: bottom;
     box-sizing: border-box;
-        border-radius: 10px;
+    border-radius: 10px;
+    text-indent: 30px;
+    font-size: 15px;
+    margin-right: 20px;
 }
 .text-img {
     width: 100%;
@@ -45,10 +54,7 @@ input {
     align-items: center;
     background: url('https://img.freepik.com/free-photo/panorama-of-winter-palace-in-night_1398-2754.jpg?w=1380&t=st=1663090586~exp=1663091186~hmac=698577747221089b0407a296c3be60d2a25052a462226428b731da63255bc030') 0 0/100%100% no-repeat;
     }
-   
-        /* Зависит от размера изображения */
-
-    
+      
 .tur {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 40px;
@@ -58,13 +64,15 @@ input {
 font-weight: bold;
 line-height: normal;
 color: #ffae14;
+text-shadow: 10px 5px  #131212;
 }
 .tur1 {
     font-family: Arial, Helvetica, sans-serif;
 font-size: 40px;
 font-weight: bold;
 line-height: normal;
-color: #ffae14;
+color: #e59500;
+text-shadow: -5px -5px  #1e1e1e;
 margin-top: 10   0px;
 }
 .more {
@@ -92,8 +100,8 @@ text-align: center;
 color: #ffae14;
 }
 img {
-    width:150px;
-    height: 150px;
+    width:200px;
+    height: 200px;
     object-fit: cover;
     display: inline-block;
     border-radius: 15px;
@@ -297,6 +305,11 @@ li {
                 padding-right: 50px;
                 gap: 20px;
             }
+
+            img {
+                width:150px;
+                height: 150px;
+            }
             .favourites-hotels {
                 padding-left: 50px;
                 padding-right: 50px;
@@ -345,6 +358,7 @@ li {
         input {
             width: 100px;
             height: 30px;  
+            font-size: 8px;
         }
         .sale {
             font-size: 10px;
@@ -357,6 +371,10 @@ li {
         }
         .about {
             display: grid;
+        }
+        img {
+            width:150px;
+            height: 150px;
         }
         .actual {
                 grid-template-rows: auto;
@@ -379,10 +397,3 @@ li {
                  font-size: 6px;
              }
             }
-            
-        
-    
-
-
-
-    
