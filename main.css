@@ -14,16 +14,30 @@ header {
     justify-content: space-around;
     align-items: center;
   }
-  .logo img {
+.logo img {
     width: 100px;
     height: 50px;
   }
-  .hotel-menu {
+.hotel-menu {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     color: #ffd540;
+    text-decoration: none;
   }
-  .search {
+  .hotel-menu:hover {
+    color: #bf7d3f;
+  }
+.hotel-menu a {
+    color: #ffd540;
+    text-decoration: none;
+  }
+  .hotel-menu a:hover {
+    color: #bf7d3f;
+  }
+.hotel-menu i {
+    margin-right: 5px;
+  }
+.search {
     width: 100%;
   }
 form .input-searh {
@@ -82,14 +96,14 @@ margin-top: 10   0px;
     height:40px;
     text-align: center;
 } 
-   button {
+button {
     width: 100px;
     height: 40px;
     background-color: #ffae14;
     border: none;
     border-radius: 10px;
     }
-  button:hover {
+button:hover {
     background-color: #d2a043;
   }
 .sale {
@@ -116,6 +130,7 @@ img {
 left: 50%;
 transform: translate(-50%, 0);
 padding: 15px 32px;
+margin-bottom: 20px;
 width: 200px; 
 height:50px;
 font-size: 18px;
@@ -128,13 +143,13 @@ font-size: 18px;
     text-align: center;
 }
 .about {
-  display: flex;
-justify-content: space-between;  
+display: flex;
+justify-content: flex-start;  
 }
 
-.about-text {
-    margin-left: 20px;
-    align-items: center;
+p.about-text {
+    margin-left: 50px;
+    max-width: 1000px;
 }
 .select {
     text-align: center;
@@ -149,7 +164,8 @@ justify-content: space-between;
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color: rgb(81, 172, 168);
+    
            }
 .footer-text-left img {
     width: 150px;
@@ -158,26 +174,34 @@ justify-content: space-between;
 .footer-text-left {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     width: 40%;
     justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
         }
 .footer-text-right {
     display: flex;
     justify-content: space-around;
     width: 40%;
     align-items: center;
-    font-size: 20px;
-    }
-.footer .footer-text-right li {
-    padding-right: 1rem;
-    }
-.footer .footer-text-right li {
-    padding-left: 1rem;
-    }
-li {
+    font-size: 16px;
     list-style-type: none;
-    }
+        }
+.footer-text-left a {
+    color: #ffd540;
+    text-decoration: none;
+}
+.footer-text-right a {
+    color: #ffd540;
+    text-decoration: none;
+}
+.footer-text-left a:hover {
+    color: #bf7d3f;
+}
+.footer-text-right a:hover {
+    color: #bf7d3f;
+}
 .footer-text-left img {
     width: 100px;
     height: 50px;
@@ -215,6 +239,7 @@ li {
             padding-left: 10px;
             padding-right: 10px;
         }
+       
         .favourites-hotels {
             display: grid;
             grid-template-rows: auto auto;
